@@ -7,9 +7,9 @@
 //  Released under the MIT license.
 //
 
-#import "EXTScope.h"
+#import "SBEXTScope.h"
 
-void ext_executeCleanupBlock (__strong ext_cleanupBlock_t *block) {
+void sb_ext_executeCleanupBlock (__strong ext_cleanupBlock_t *block) {
     (*block)();
 }
 

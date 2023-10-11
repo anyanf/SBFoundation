@@ -30,7 +30,7 @@
 #import "NSNotificationCenter+SBExtension.h"
 
 // NSObject
-#import "EXTScope.h" // weak strong self
+#import "SBEXTScope.h" // weak strong self
 
 // NSString
 #import "SBStringMacro.h"

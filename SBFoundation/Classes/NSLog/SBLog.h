@@ -39,7 +39,6 @@ fprintf(stderr, ".... NSLog(🛠) .... <%s : %d> %s %s\n", [[[NSString stringWit
 
 
 #define LOG_USERINFO_AK @"🍎🍎🍎🍎AnKang🍎🍎🍎🍎"   // 安康LOG
-#define LOG_USERINFO_XHD @"☀️☀️☀️☀️XieHaiDuo☀️☀️☀️☀️"   // 安康LOG
 
 #ifdef LOG_USERINFO_AK
 #define LOG_AK SB_LOG_PRINT(LOG_USERINFO_AK, @"");
@@ -47,14 +46,6 @@ fprintf(stderr, ".... NSLog(🛠) .... <%s : %d> %s %s\n", [[[NSString stringWit
 #else
 #define LOG_AK {};
 #define LOG_AK_(...) {};
-#endif
-
-#ifdef LOG_USERINFO_XHD
-#define LOG_XHD SB_LOG_PRINT(LOG_USERINFO_XHD, @"");
-#define LOG_XHD_(...) SB_LOG_PRINT(LOG_USERINFO_XHD, __VA_ARGS__);
-#else
-#define LOG_XHD {};
-#define LOG_XHD_(...) {};
 #endif
 
 
